@@ -1,26 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Room from './Room';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function App({name,age}) {
+   return <div>Hello <strong>{name}</strong>!
+   <h2 className="h2">I am {age-1} years old.</h2><div>
+      <Room></Room>
+   </div>
+      </div>
 }
 
 export default App;
